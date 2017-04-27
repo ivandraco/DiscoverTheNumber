@@ -12,46 +12,116 @@
     tools:context="com.example.iramirez.myapplicationfirst.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_marginTop="73dp"
-        android:text="What is the Correct Number?"
-        android:allowUndo="false"
-        android:singleLine="false"
-        android:selectAllOnFocus="false"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:textAlignment="center"
         android:textStyle="bold"
-        android:textIsSelectable="false" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
+        android:text="Discover the number that was generated!"
+        android:id="@+id/textView1"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/buttonRandom"
         android:layout_centerHorizontal="true" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_marginTop="72dp"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentStart="true" />
+        android:textSize="30dp"
+        android:text="Generate Number Random"
+        android:textStyle="bold"
+        android:id="@+id/buttonRandom"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textViewScore"
+        android:layout_centerHorizontal="true" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_alignTop="@+id/button2"
-        android:layout_alignParentEnd="true" />
+        android:text="Score:"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:id="@+id/textViewScore"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discovers 0  "
+        android:id="@+id/textViewDisc"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textViewFail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fails 0"
+        android:id="@+id/textViewFail"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/linearLayoutBtts" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:id="@+id/textViewUser"
+        android:layout_above="@+id/buttonRandom"
+        android:layout_alignStart="@+id/buttonRandom" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="55dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentEnd="false"
+        android:id="@+id/linearLayoutBtts"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10dp"
+            android:id="@+id/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="15dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10dp"
+            android:layout_marginRight="15dip"
+            android:id="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10dp"
+            android:layout_marginRight="15dip"
+            android:id="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10" />
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>
