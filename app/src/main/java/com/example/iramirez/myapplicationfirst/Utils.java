@@ -8,12 +8,7 @@ import java.util.Random;
 public class Utils {
 
 
-    public static int GetNumberRandom(){
-       return (int)Math.round(Math.random()*999);
-    }
-
-
-    public static int GetRandomNumber(){
+   public static int GetRandomNumber(){
 
         int min = 1;
         int max = 999;
