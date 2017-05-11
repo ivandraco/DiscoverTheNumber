@@ -56,8 +56,29 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 Log.wtf("User Login:", User);
-                LoginActivity.this.finish();
+
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
+
+                Button bttSign =  (Button) findViewById(R.id.button_sign_in);
+                bttSign.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        LoginActivity.this.finish();
+                        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+
+
+                    }
+                });
+
+
+                Button bttEst =  (Button) findViewById(R.id.buttom_estadistica);
+                bttEst.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        LoginActivity.this.finish();
+                        startActivity(new Intent(LoginActivity.this, ListViewMain.class));
+                    }
+                });
 
 
 

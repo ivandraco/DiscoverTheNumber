@@ -11,7 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ListViewExample extends AppCompatActivity {
+public class ListViewMain extends AppCompatActivity {
 
     ListView lsv;
 
