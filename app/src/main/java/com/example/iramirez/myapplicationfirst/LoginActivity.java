@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         // Set up the login form.
 
-        Button sign_in_button = (Button) findViewById(R.id.sign_in_button);
+        Button sign_in_button = (Button) findViewById(R.id.button_sign_in);
         sign_in_button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,36 +56,32 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 Log.wtf("User Login:", User);
+                LoginActivity.this.finish();
+                startActivity(new Intent(LoginActivity.this,MainActivity.class));
 
-                startActivity(new Intent(LoginActivity.this, MainActivity.class));
-
-                Button bttSign =  (Button) findViewById(R.id.button_sign_in);
-                bttSign.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        LoginActivity.this.finish();
-                        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                 }
+        });
 
 
-                    }
-                });
+        Button bttEst =  (Button) findViewById(R.id.buttom_estadistica);
+        bttEst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Context context = getApplicationContext();
+                CharSequence text =  "Estadisticas del Juego";
+                int duration = Toast.LENGTH_LONG;
 
-                Button bttEst =  (Button) findViewById(R.id.buttom_estadistica);
-                bttEst.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        LoginActivity.this.finish();
-                        startActivity(new Intent(LoginActivity.this, ListViewMain.class));
-                    }
-                });
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
 
-
-
+                LoginActivity.this.finish();
+                startActivity(new Intent(LoginActivity.this, ListViewMain.class));
             }
         });
 
-    }
 
+
+    }
 }
 
