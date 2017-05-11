@@ -26,7 +26,22 @@ public class ListViewMain extends AppCompatActivity {
                                                 new ListviewRen(R.mipmap.ic_launcher,"tres"),
                                                 new ListviewRen(R.mipmap.ic_launcher,"cuatro"),
                                                 new ListviewRen(R.mipmap.ic_launcher,"cinco"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"seis")
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"siete"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"ocho"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"nueve"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"diez"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"once"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"doce"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"trece"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"catorce"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"quince"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"dieciseis"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"diecisiete"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"dieciocho"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"diecinueve"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"veinte"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"veintiuno")
                                              };
 
 
