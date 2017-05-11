@@ -16,4 +16,12 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_list_view_example">ListViewExample</string>
+    <string name="discovers_0">Discovers 0</string>
+    <string name="fails_0">Fails 0</string>
+    <string name="generate_number_random">Generate Number Random</string>
+    <string name="score">Score:</string>
+    <string name="user">User</string>
+    <string name="new_message">New Message</string>
+    <string name="numeros">Numeros</string>
 </resources>
