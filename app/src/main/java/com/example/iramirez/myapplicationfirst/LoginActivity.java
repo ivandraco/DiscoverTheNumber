@@ -51,14 +51,16 @@ public class LoginActivity extends AppCompatActivity {
                 CharSequence text =  User+" a iniciado session en juego";
                 int duration = Toast.LENGTH_LONG;
 
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+              if(!User.equals("") && User!=null  && !User.isEmpty()) {
+                  Toast toast = Toast.makeText(context, text, duration);
+                  toast.show();
 
 
-                Log.wtf("User Login:", User);
-                LoginActivity.this.finish();
-                startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                  Log.wtf("User Login:", User);
 
+                  LoginActivity.this.finish();
+                  startActivity(new Intent(LoginActivity.this, MainActivity.class));
+              }
                  }
         });
 

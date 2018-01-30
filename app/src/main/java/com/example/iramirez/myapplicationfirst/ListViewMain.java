@@ -21,28 +21,25 @@ public class ListViewMain extends AppCompatActivity {
         setContentView(R.layout.activity_list_view_example);
 
         ListviewRen  renglones_datos[] =  new ListviewRen[]{
-                                                new ListviewRen(R.mipmap.ic_launcher,"uno"),
+                                                new ListviewRen(R.mipmap.ic_launcher,"uno"+" discovers"+" fails"),
                                                 new ListviewRen(R.mipmap.ic_launcher,"dos"),
                                                 new ListviewRen(R.mipmap.ic_launcher,"tres"),
                                                 new ListviewRen(R.mipmap.ic_launcher,"cuatro"),
                                                 new ListviewRen(R.mipmap.ic_launcher,"cinco"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"seis"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"siete"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"ocho"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"nueve"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"diez"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"once"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"doce"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"trece"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"catorce"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"quince"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"dieciseis"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"diecisiete"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"dieciocho"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"diecinueve"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"veinte"),
-                                                new ListviewRen(R.mipmap.ic_launcher,"veintiuno")
-                                             };
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis1" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis2" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis3" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis4" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis5" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis6" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis7" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis8" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis9" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis10" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis11" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis12" ),
+                                                new ListviewRen(R.mipmap.ic_launcher,"seis13" )
+        };
 
 
         ListviewAdapter adapter= new ListviewAdapter(this,R.layout.renglon,renglones_datos);
