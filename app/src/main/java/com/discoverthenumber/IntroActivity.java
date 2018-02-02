@@ -1,17 +1,16 @@
 package com.discoverthenumber;
 
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
-import java.io.IOException;
+import com.bumptech.glide.Glide;
+
 import java.util.Timer;
 import java.util.TimerTask;
-import java.io.InputStream;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -25,7 +24,10 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
 
         ImageView iv = (ImageView) findViewById(R.id.imageView);
-        iv.setImageBitmap(getBitmapFromAssets("Random.gif"));
+
+        Glide.with(this)
+               .load(Uri.parse("file:///android_asset/random_numbers.gif"))
+               .into(iv);
 
         MainTimer = new Timer();
         MainTimer.schedule(new TimerTask() {
@@ -45,20 +47,6 @@ public class IntroActivity extends AppCompatActivity {
         if (scheduled)
             MainTimer.cancel();
         MainTimer.purge();
-    }
-
-
-    private Bitmap getBitmapFromAssets(String fileName){
-        AssetManager am = getAssets();
-        InputStream is = null;
-        Bitmap bitmap = null;
-            try{
-                  is = am.open(fileName);
-                  bitmap = BitmapFactory.decodeStream(is);
-            }catch(IOException e){
-                e.printStackTrace();
-            }
-        return bitmap;
     }
 
 }
