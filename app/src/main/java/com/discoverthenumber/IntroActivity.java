@@ -24,12 +24,13 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
 
+        ImageView iv = (ImageView) findViewById(R.id.imageView);
+        iv.setImageBitmap(getBitmapFromAssets("Random.gif"));
+
         MainTimer = new Timer();
         MainTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                final ImageView iv = (ImageView) findViewById(R.id.imageView);
-                iv.setImageBitmap(getBitmapFromAssets("Random.gif"));
                 IntroActivity.this.finish();
                 startActivity(new Intent(IntroActivity.this, LoginActivity.class));
             }
@@ -48,18 +49,16 @@ public class IntroActivity extends AppCompatActivity {
 
 
     private Bitmap getBitmapFromAssets(String fileName){
-
         AssetManager am = getAssets();
         InputStream is = null;
-        try{
-            is = am.open(fileName);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-
-        Bitmap bitmap = BitmapFactory.decodeStream(is);
+        Bitmap bitmap = null;
+            try{
+                  is = am.open(fileName);
+                  bitmap = BitmapFactory.decodeStream(is);
+            }catch(IOException e){
+                e.printStackTrace();
+            }
         return bitmap;
-
     }
 
 }
