@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+
 public class Main2Activity extends AppCompatActivity {
 
     @Override
@@ -27,7 +28,6 @@ public class Main2Activity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("MyPrefsFile", MODE_PRIVATE);
          int  conDiscs  = prefs.getInt("conDiscs", 0);//"0" is the default value.
          int  contFails = prefs.getInt("contFails", 0); //0 is the default value.
-
 
 
         if(NumberRandom==NumberButton)

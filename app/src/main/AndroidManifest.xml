@@ -16,7 +16,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
@@ -33,6 +33,10 @@
         <activity
             android:name=".ListViewMain"
             android:label="@string/title_activity_list_view_example"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
