@@ -35,9 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         int  conDiscs  = prefs.getInt("conDiscs", 0);//"0" is the default value.
         int  contFails = prefs.getInt("contFails", 0); //0 is the default value.
-        String  user  = prefs.getString("User", "Dummy");//"Dummy" is the default value.
-        int  level = prefs.getInt("level", 1); //0 is the default value.
-
+        String  user  = prefs.getString("User", null);//"Dummy" is the default value.
 
         Log.wtf("User:", user);
 
@@ -52,6 +50,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView tvFail = (TextView)findViewById(R.id.textViewFail);
         tvFail.setText("Fails "+String.valueOf(contFails));
         tvFail.setTextColor(Color.RED);
+
+        Button bttExit =  (Button) findViewById(R.id.buttExit1);
+        bttExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences.Editor editor = getSharedPreferences("MyPrefsFile", MODE_PRIVATE).edit();
+                editor.putInt("conDiscs", 0);
+                editor.putInt("contFails", 0);
+                editor.putString("User", null);
+                editor.commit();
+                MainActivity.this.finish();
+                startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            }
+        });
+
+
     }
 
 
@@ -136,6 +150,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                       }
                 enableButtons=true;
                 break;
+
         }
 
     }

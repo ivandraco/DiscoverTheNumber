@@ -55,7 +55,6 @@ public class LoginActivity extends AppCompatActivity {
                   Toast toast = Toast.makeText(context, text, duration);
                   toast.show();
 
-
                   Log.wtf("User Login:", User);
 
                   LoginActivity.this.finish();

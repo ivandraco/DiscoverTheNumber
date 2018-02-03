@@ -12,7 +12,7 @@
     tools:context="com.discoverthenumber.Main2Activity"
     tools:showIn="@layout/activity_main2">
 
-    <TextView
+    <!--TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/new_message"
@@ -21,6 +21,14 @@
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="157dp" />
+        android:layout_marginTop="157dp" /-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewMain2"
+        android:layout_marginTop="16dp"
+        />
+
 
 </RelativeLayout>

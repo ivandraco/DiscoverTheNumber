@@ -26,4 +26,6 @@
     <string name="numeros">Numeros</string>
     <string name="estadisticas">estadisticas</string>
     <string name="title_activity_intro">IntroActivity</string>
+    <string name="exit">Exit</string>
+    <string name="exit2">Exit</string>
 </resources>

@@ -2,6 +2,7 @@ package com.discoverthenumber;
 
 import android.content.Intent;
 
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -33,8 +34,18 @@ public class IntroActivity extends AppCompatActivity {
         MainTimer.schedule(new TimerTask() {
             @Override
             public void run() {
-                IntroActivity.this.finish();
-                startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+
+                SharedPreferences prefs = getSharedPreferences("MyPrefsFile", MODE_PRIVATE);
+                String  user  = prefs.getString("User", null);
+
+               if(user!=null) {
+                  IntroActivity.this.finish();
+                  startActivity(new Intent(IntroActivity.this, MainActivity.class));
+               }else{
+                  IntroActivity.this.finish();
+                  startActivity(new Intent(IntroActivity.this, LoginActivity.class));
+               }
+
             }
         }, DELAY);
         scheduled = true;
