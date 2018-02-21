@@ -1,6 +1,6 @@
 package com.discoverthenumber;
 
-import android.annotation.SuppressLint;
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -18,7 +19,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     boolean enableButtons=false;
     int numberone=0, numbertwo=0, numberthree=0;
 
-    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        LinearLayout Layout2=(LinearLayout)this.findViewById(R.id.linearLayoutBtts2);
+        Layout2.setVisibility(View.INVISIBLE);
+
+        LinearLayout Layout3=(LinearLayout)this.findViewById(R.id.linearLayoutBtts3);
+        Layout3.setVisibility(View.INVISIBLE);
 
         Button bttRnd = (Button) findViewById(R.id.buttonRandom);
         bttRnd.setOnClickListener(this);
