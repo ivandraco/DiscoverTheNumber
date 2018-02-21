@@ -1,5 +1,6 @@
 package com.discoverthenumber;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     boolean enableButtons=false;
     int numberone=0, numbertwo=0, numberthree=0;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +27,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-      //  TextView tv = (TextView)findViewById(R.id.buttonRandom);
-       // tv.setTextColor(Color.BLUE);
         Button bttRnd = (Button) findViewById(R.id.buttonRandom);
         bttRnd.setOnClickListener(this);
 
@@ -42,13 +42,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         TextView tvUser = (TextView)findViewById(R.id.textViewUser);
         tvUser.setText(user);
 
+        TextView tvLevel = (TextView)findViewById(R.id.textViewLevel);
+        tvLevel.setText(tvLevel.getText()+": 1");
 
         TextView tvDisc = (TextView)findViewById(R.id.textViewDisc);
-        tvDisc.setText("Discovers "+String.valueOf(conDiscs)+"  ");
+        tvDisc.setText(  tvDisc.getText()+" "+String.valueOf(conDiscs));
         tvDisc.setTextColor(Color.GREEN);
 
         TextView tvFail = (TextView)findViewById(R.id.textViewFail);
-        tvFail.setText("Fails "+String.valueOf(contFails));
+        tvFail.setText( tvFail.getText()+" "+String.valueOf(contFails));
         tvFail.setTextColor(Color.RED);
 
         Button bttExit =  (Button) findViewById(R.id.buttExit1);

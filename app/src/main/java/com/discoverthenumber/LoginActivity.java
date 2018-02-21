@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity  {
 
 
                 Context context = getApplicationContext();
-                CharSequence text =  User+" a iniciado session en el juego";
+                CharSequence text =  User+" "+getResources().getString(R.string.initGame);
                 int duration = Toast.LENGTH_LONG;
 
               if(!User.equals("") && User!=null  && !User.isEmpty()) {

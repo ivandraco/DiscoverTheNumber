@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Descubre El Numero</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_login">Registrarse</string>
+
+    <string name="prompt_user">Usuario</string>
+    <string name="action_sign_in">Registrarse</string>
+    <string name="title_activity_list_view_example">ListViewExample</string>
+    <string name="discovers_0">Aciertos</string>
+    <string name="fails_0">Errores</string>
+    <string name="generate_number_random">Generar Numero Aleatorio</string>
+    <string name="score">Puntuación:</string>
+    <string name="user">Usuario</string>
+
+    <string name="numeros">Numeros</string>
+    <string name="estadisticas">estadisticas</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="exit">Salir</string>
+    <string name="exit2">Salir</string>
+    <string name="discover_the_number">Descubre El Numero</string>
+    <string name="txtdiscovernumber">Descubre el número que se generó al azar!!!</string>
+    <string name="level">Nivel</string>
+    <string name="initGame">a iniciado session en el juego</string>
+</resources>

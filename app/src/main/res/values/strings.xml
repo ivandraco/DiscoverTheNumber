@@ -4,30 +4,22 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_login">Sign in</string>
 
-    <!-- Strings related to login -->
     <string name="prompt_user">User</string>
-    <string name="prompt_password">Password (optional)</string>
     <string name="action_sign_in">Sign in</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
     <string name="title_activity_list_view_example">ListViewExample</string>
     <string name="discovers_0">Discovers 0</string>
     <string name="fails_0">Fails 0</string>
     <string name="generate_number_random">Generate Number Random</string>
     <string name="score">Score:</string>
     <string name="user">User</string>
-    <string name="new_message">New Message</string>
+
     <string name="numeros">Numeros</string>
     <string name="estadisticas">estadisticas</string>
     <string name="title_activity_intro">IntroActivity</string>
     <string name="exit">Exit</string>
     <string name="exit2">Exit</string>
     <string name="discover_the_number">Discover The Number</string>
-    <string name="txtdiscovernumber">Discover the number that was generated!</string>
+    <string name="txtdiscovernumber">Discover the number that was generated!!!</string>
+    <string name="level">Level</string>
+    <string name="initGame"> a logged in session in the game</string>
 </resources>
