@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView tv = (TextView)findViewById(R.id.buttonRandom);
-        tv.setTextColor(Color.BLUE);
+      //  TextView tv = (TextView)findViewById(R.id.buttonRandom);
+       // tv.setTextColor(Color.BLUE);
         Button bttRnd = (Button) findViewById(R.id.buttonRandom);
         bttRnd.setOnClickListener(this);
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         TextView tvUser = (TextView)findViewById(R.id.textViewUser);
         tvUser.setText(user);
-        tvUser.setTextColor(Color.BLUE);
+
 
         TextView tvDisc = (TextView)findViewById(R.id.textViewDisc);
         tvDisc.setText("Discovers "+String.valueOf(conDiscs)+"  ");

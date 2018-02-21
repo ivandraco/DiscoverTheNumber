@@ -25,6 +25,8 @@ dependencies {
         exclude group: "com.android.support"
     }
     implementation 'com.android.support:support-fragment:24.1.1'
+
+    compile 'com.android.support:design:24.2.1'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:design:24.2.1'

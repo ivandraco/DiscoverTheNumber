@@ -12,12 +12,13 @@ import android.view.View.OnClickListener;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity  {
 
     /**
      * Id to identity READ_CONTACTS permission request.
@@ -36,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                AutoCompleteTextView tvUser = (AutoCompleteTextView)findViewById(R.id.User);
+                TextView tvUser = (TextView)findViewById(R.id.User);
                 Editable UserEdit= (Editable)tvUser.getText();
                 User= UserEdit.toString();
 
@@ -48,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 Context context = getApplicationContext();
-                CharSequence text =  User+" a iniciado session en juego";
+                CharSequence text =  User+" a iniciado session en el juego";
                 int duration = Toast.LENGTH_LONG;
 
               if(!User.equals("") && User!=null  && !User.isEmpty()) {
