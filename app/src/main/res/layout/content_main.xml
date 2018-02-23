@@ -38,7 +38,8 @@
         android:text="@string/generate_number_random"
         android:textColor="@color/accent"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:theme="@style/MyButton"/>
 
     <TextView
         android:id="@+id/textViewScore"
@@ -63,10 +64,10 @@
         android:layout_marginEnd="20dp"
         android:layout_toStartOf="@+id/textViewFail"
         android:elevation="5dp"
-
         android:text="@string/discovers_0"
         android:textSize="16sp"
         android:textStyle="bold"
+        android:textColor="@color/green_A400"
         tools:ignore="RelativeOverlap" />
 
     <TextView
@@ -78,8 +79,8 @@
         android:layout_marginTop="52dp"
         android:elevation="5dp"
         android:text="@string/fails_0"
+        android:textColor="@color/red_500"
         android:textSize="16sp"
-
         android:textStyle="bold" />
 
     <TextView
@@ -91,7 +92,6 @@
         android:elevation="5dp"
         android:text="@string/user"
         android:textAllCaps="true"
-        android:textColor="@color/accent"
         android:textSize="16sp"
         android:textStyle="bold" />
 
@@ -104,7 +104,6 @@
         android:layout_below="@+id/textViewUser"
         android:layout_marginTop="19dp"
         android:textStyle="bold"
-        android:textColor="@color/blue_700"
         android:text="@string/level" />
 
     <LinearLayout
@@ -126,10 +125,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="RtlHardcoded,SmallSp" />
 
         <Button
@@ -139,10 +138,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="RtlHardcoded,SmallSp" />
 
         <Button
@@ -153,10 +152,10 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="ObsoleteLayoutParam,RtlHardcoded,SmallSp" />
 
 
@@ -181,10 +180,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="RtlHardcoded,SmallSp" />
 
         <Button
@@ -194,10 +193,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="RtlHardcoded,SmallSp" />
 
         <Button
@@ -208,10 +207,10 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="ObsoleteLayoutParam,RtlHardcoded,SmallSp" />
 
     </LinearLayout>
@@ -235,10 +234,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="RtlHardcoded,SmallSp" />
 
         <Button
@@ -248,10 +247,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="RtlHardcoded,SmallSp" />
 
         <Button
@@ -262,10 +261,10 @@
             android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="15dip"
-            android:layout_weight="0.10"
+            android:layout_weight="0.30"
             android:elevation="2dp"
             android:text=""
-            android:textSize="10sp"
+            android:textSize="12sp"
             tools:ignore="ObsoleteLayoutParam,RtlHardcoded,SmallSp" />
 
     </LinearLayout>
@@ -279,7 +278,6 @@
         android:layout_marginEnd="14dp"
         android:elevation="2dp"
         android:text="@string/exit" />
-
 
 </RelativeLayout>
 

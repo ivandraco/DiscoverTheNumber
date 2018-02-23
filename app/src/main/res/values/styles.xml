@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="AppTheme.Base"/>
 
-    <style name="AppTheme.Base" parent="Theme.AppCompat">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
 
         <!-- android theme colors -->
         <item name="colorPrimary">@color/primary</item>
@@ -17,10 +17,27 @@
     <style name="AppTheme.NoActionBar" >
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/blue_500</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/accent</item>
+        <item name="colorButtonNormal">@color/blue_500</item>
+    </style>
+
+    <!--Etiqueta flotante-->
+    <style name="AppTheme.FloatingLabel" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/light_bg_dark_hint_text</item>
+    </style>
+
+    <style name="EditText" parent="AppTheme">
+        <!-- cursor y línea normal-->
+        <item name="colorControlNormal">@color/light_bg_dark_primary_text</item>
+        <!-- cursor y línea con foco-->
+        <item name="colorControlActivated">@color/light_bg_dark_primary_text</item>
+    </style>
 </resources>

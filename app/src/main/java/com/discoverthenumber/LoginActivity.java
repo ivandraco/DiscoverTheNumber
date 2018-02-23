@@ -45,6 +45,7 @@ public class LoginActivity extends AppCompatActivity  {
                 editor.putInt("conDiscs", 0);
                 editor.putInt("contFails", 0);
                 editor.putString("User", User);
+                editor.putInt("level", 1);
                 editor.commit();
 
 

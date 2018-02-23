@@ -22,4 +22,6 @@
     <string name="txtdiscovernumber">Discover the number that was generated!!!</string>
     <string name="level">Level</string>
     <string name="initGame"> a logged in session in the game</string>
+    <string name="upLevel">You have gained a Level!!!</string>
+    <string name="messLevel">Success 10 times and level up!!!</string>
 </resources>

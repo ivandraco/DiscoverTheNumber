@@ -22,4 +22,6 @@
     <string name="txtdiscovernumber">Descubre el número que se generó al azar!!!</string>
     <string name="level">Nivel</string>
     <string name="initGame">a iniciado session en el juego</string>
+    <string name="upLevel">Has subido de Nivel!!!</string>
+    <string name="messLevel">Acierta 10 veces y sube de nivel!!!</string>
 </resources>
